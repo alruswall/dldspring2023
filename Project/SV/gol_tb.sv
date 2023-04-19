@@ -1,15 +1,15 @@
 module stimulus ();
 
+   logic  start;
    logic  clk;
-   logic  reset;
-   logic  [5:0] outP;
+
+   logic  [63:0] outGrid;
    
    integer handle3;
    integer desc3;
    
    // Instantiate DUT
-   gol dut (reset, clk, outP);   
-   
+   gol dut (start, clk, outGrid);      
    // Setup the clock to toggle every 1 time units 
    initial 
      begin	
@@ -19,7 +19,7 @@ module stimulus ();
 
    initial
      begin
-	// Gives output file name
+	// Gives outGrid out file name
 	handle3 = $fopen("gol.out");
 	// Tells when to finish simulation
 	#500 $finish;		
@@ -28,45 +28,16 @@ module stimulus ();
    always 
      begin
 	desc3 = handle3;
-	#5 $fdisplay(desc3, "%b %b || %b", 
-		     reset, left, right);
+	#5 $fdisplay(desc3, "%b %b", 
+		     start, clk);
      end   
    
    initial 
+
      begin      
-	#0   reset = 1'b1; // test left blink signal first by running reset, then off, then on, then quickly on + reset to make sure it isn't quitting in the middle of a cycle.
-	#41  reset = 1'b0;	
-	#0   left = 1'b0;
-	#20  left = 1'b1;
-	#20  left = 1'b0;
-     #5   left = 1'b1;
-     #10  left = 1'b0;
-     #20  reset = 1'b0;
-
-     //Same test bank as above, but for right.
-     #0   reset = 1'b1; 
-	#41  reset = 1'b0;	
-	#0   right = 1'b0;
-	#20  right = 1'b1;
-	#20  right = 1'b0;
-     #5   right = 1'b1;
-     #10  right = 1'b0;
-     #20  reset = 1'b0;
-
-//Hazards test bank
-     #0   reset = 1'b1; 
-	#41  reset = 1'b0;	
-	#0   right = 1'b0;
-     #0   left  = 1'b0;
-	#20  right = 1'b1;
-     #0   left  = 1'b1;
-	#20  right = 1'b0;
-     #0   left  = 1'b0;
-     #20  reset = 1'b0;
-     #20  right = 1'b1;
-     #0   left  = 1'b1;
-     #0   reset = 1'b1;
-
+	#0   start = 1'b1;
+	#41  start = 1'b0;
+     
      end
 
 endmodule // gol_tb

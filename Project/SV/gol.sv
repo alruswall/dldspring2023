@@ -20,7 +20,7 @@ logic [63:0] nextGrid;
      case (state)
 //initial state
       S0: begin
-        assign outGrid = grid;
+      outGrid = grid;
       nextstate = cal;
       end
 //put into datapath
@@ -30,7 +30,7 @@ logic [63:0] nextGrid;
       end
       st: begin
 //set to grid
-       assign outGrid = nextGrid;
+        outGrid = nextGrid;
         nextstate = cal;
       end
      endcase
