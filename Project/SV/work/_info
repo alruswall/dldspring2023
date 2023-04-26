@@ -1,0 +1,214 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.3 2021.07, Jul 13 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aurasmu/Desktop/dldspring2023/Project/SV
+T_opt
+Z1 !s110 1682544972
+VnmQ<GjmW`i4eM=P^WJczG3
+04 8 4 work stimulus fast 0
+=1-00be43905a36-6449994c-1d9-a9ec
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.3;73
+vdatapath
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
+!i10b 1
+!s100 V;C_hS8f1BHnb36LBjYJ01
+I<ahlD=61ndBBilL@NE8dL1
+S1
+R0
+Z4 w1682544899
+Z5 8datapath.sv
+Z6 Fdatapath.sv
+!i122 0
+L0 7 79
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2021.3;73
+r1
+!s85 0
+31
+Z9 !s108 1682544972.000000
+Z10 !s107 datapath.sv|gol_tb.sv|gol.sv|
+Z11 !s90 gol.sv|gol_tb.sv|datapath.sv|
+!i113 0
+Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vevolve3
+R3
+R1
+!i10b 1
+!s100 IXoNo]gEC0MZaJ37;nO_30
+IM8klP?6AAQElYj^^>dMog1
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 88 14
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vevolve5
+R3
+R1
+!i10b 1
+!s100 I^MlKOK_W3OeeJBMAXc:W2
+I:N2@j2?Hz8T^_^8H8DMB42
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 103 17
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vevolve8
+R3
+R1
+!i10b 1
+!s100 X=VQ5`4bnRg0]4e9c_9PV1
+I9=CLF7`lSL3IgfFX:JW2G3
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 122 23
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vgol
+R3
+R1
+!i10b 1
+!s100 >FnV9FZBNldXT71Ah3YFd0
+IG@zin:F[H=a9=`hPEP]KN0
+S1
+R0
+R4
+Z13 8gol.sv
+Z14 Fgol.sv
+!i122 0
+L0 1 37
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vregister
+R3
+R1
+!i10b 1
+!s100 YCD@fTW6fM47ZMZ;Q?[;20
+IY03?GZ7]Nbd6b=kgf_e9_3
+S1
+R0
+R4
+R13
+R14
+!i122 0
+L0 39 11
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vrules
+R3
+R1
+!i10b 1
+!s100 JL3^U4`<X^MUIi:l8LemW2
+IBcFBl4c5NRZOko>2=jFA93
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 147 9
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vstimulus
+R3
+R1
+!i10b 1
+!s100 @R8^9k29?9RAjKKeCA3dk1
+IXBA9Z0KK<68h[_>3h62b83
+S1
+R0
+w1682543140
+8gol_tb.sv
+Fgol_tb.sv
+!i122 0
+L0 1 44
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2

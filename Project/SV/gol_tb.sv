@@ -21,15 +21,16 @@ module stimulus ();
      begin
 	// Gives outGrid out file name
 	handle3 = $fopen("gol.out");
+     desc3 = handle3;
 	// Tells when to finish simulation
 	#500 $finish;		
      end
 
-   always 
+   always@(outGrid)
      begin
-	desc3 = handle3;
-	#5 $fdisplay(desc3, "%b %b", 
-		     start, clk);
+	
+	$fdisplay(desc3, "%b\n%b\n%b\n%b\n%b\n%b\n%b\n%b\n", 
+		     outGrid[63:56],outGrid[55:48],outGrid[47:40],outGrid[39:32],outGrid[31:24],outGrid[23:16],outGrid[15:8],outGrid[7:0]);
      end   
    
    initial 
