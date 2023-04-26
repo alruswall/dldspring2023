@@ -6,9 +6,10 @@
 
 module datapath ( grid, grid_evolve );
 
-   output logic [63:0] 	grid_evolve;
    input logic [63:0] 	grid;
-   
+   output logic [63:0] 	grid_evolve;
+
+
    evolve3 e0_0 (grid_evolve[0], grid[1], grid[8], grid[9], grid[0]);
    evolve5 e0_1 (grid_evolve[1], grid[0], grid[2], grid[8], grid[9], grid[10], grid[1]);
    evolve5 e0_2 (grid_evolve[2], grid[1], grid[3], grid[9], grid[10], grid[11], grid[2]);
@@ -149,7 +150,7 @@ module rules (pop_count, current_state, next_state);
    input logic [3:0] pop_count;
    input logic 	     current_state;
    output logic      next_state;
-   
+
    assign next_state = (pop_count == 2 & current_state) | pop_count == 3;
    
 endmodule // rules
