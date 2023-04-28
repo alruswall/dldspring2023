@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.runs/synth_1/top_demo.tcl"
+  variable script "C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.runs/synth_1/top_demo.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,40 +71,43 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
+set_param synth.incrementalSynthesisCache C:/Users/gfundis/Desktop/.Xil/Vivado-48012-CEAT-ENDV350-06/incrSyn
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.cache/wt [current_project]
-set_property parent.project_path C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.cache/wt [current_project]
+set_property parent.project_path C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.cache/ip [current_project]
+set_property ip_output_repo c:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_clock_regeneration_packet.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_info_frame.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_sample_packet.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/auxiliary_video_information_info_frame.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/SV/clk_div.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/SV/datapath.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/digit2segments.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/SV/gol.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi_top.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_assembler.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_picker.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/pll.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/segment_driver.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/serializer.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/source_product_description_info_frame.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv
-  C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/new/top_demo.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_clock_regeneration_packet.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_info_frame.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_sample_packet.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/auxiliary_video_information_info_frame.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/SV/clk_div.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/digit2segments.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/SV/gol.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi_top.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_assembler.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_picker.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/pll.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/segment_driver.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/serializer.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/source_product_description_info_frame.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv
+  C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/new/top_demo.sv
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -115,8 +118,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc
-set_property used_in_implementation false [get_files C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc]
+read_xdc C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc
+set_property used_in_implementation false [get_files C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

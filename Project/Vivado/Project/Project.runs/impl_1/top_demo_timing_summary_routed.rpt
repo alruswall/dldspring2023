@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Apr 26 17:41:49 2023
-| Host         : CEAT-ENDV350-10 running 64-bit major release  (build 9200)
+| Date         : Fri Apr 28 15:53:59 2023
+| Host         : CEAT-ENDV350-06 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file top_demo_timing_summary_routed.rpt -pb top_demo_timing_summary_routed.pb -rpx top_demo_timing_summary_routed.rpx -warn_on_violation
 | Design       : top_demo
 | Device       : 7z020-clg484
@@ -39,10 +39,10 @@ check_timing report
 
 Table of Contents
 -----------------
-1. checking no_clock (977)
+1. checking no_clock (837)
 2. checking constant_clock (0)
 3. checking pulse_width_clock (0)
-4. checking unconstrained_internal_endpoints (674)
+4. checking unconstrained_internal_endpoints (666)
 5. checking no_input_delay (2)
 6. checking no_output_delay (16)
 7. checking multiple_clock (0)
@@ -52,7 +52,7 @@ Table of Contents
 11. checking partial_output_delay (0)
 12. checking latch_loops (0)
 
-1. checking no_clock (977)
+1. checking no_clock (837)
 --------------------------
  There are 243 register/latch pins with no clock driven by root clock pin: sysclk_125mhz (HIGH)
 
@@ -90,13 +90,7 @@ Table of Contents
 
  There are 26 register/latch pins with no clock driven by root clock pin: CURRENT_COUNT_reg[9]/Q (HIGH)
 
- There are 3 register/latch pins with no clock driven by root clock pin: nolabel_line60/clk_count_reg[23]/Q (HIGH)
-
- There are 67 register/latch pins with no clock driven by root clock pin: nolabel_line61/FSM_onehot_state_reg[0]/Q (HIGH)
-
- There are 67 register/latch pins with no clock driven by root clock pin: nolabel_line61/FSM_onehot_state_reg[1]/Q (HIGH)
-
- There are 67 register/latch pins with no clock driven by root clock pin: nolabel_line61/FSM_onehot_state_reg[2]/Q (HIGH)
+ There are 64 register/latch pins with no clock driven by root clock pin: nolabel_line60/clk_count_reg[23]/Q (HIGH)
 
  There are 8 register/latch pins with no clock driven by root clock pin: test/counter_reg[0]/Q (HIGH)
 
@@ -131,9 +125,9 @@ Table of Contents
  There are 0 register/latch pins which need pulse_width check
 
 
-4. checking unconstrained_internal_endpoints (674)
+4. checking unconstrained_internal_endpoints (666)
 --------------------------------------------------
- There are 674 pins that are not constrained for maximum delay. (HIGH)
+ There are 666 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

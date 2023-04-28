@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="C:/Users/aurasmu/Desktop/dldspring2023/Project/Vivado/Project/Project.xpr">
+<Project Version="7" Minor="54" Path="C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0a1ba0213eb34516b4ff4d694882a035"/>
@@ -406,7 +406,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/attributemap.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/attributemap.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -414,7 +414,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/audio_clock_regeneration_packet.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/audio_clock_regeneration_packet.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -422,7 +422,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/audio_info_frame.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/audio_info_frame.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -430,7 +430,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/audio_sample_packet.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/audio_sample_packet.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -438,7 +438,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/auxiliary_video_information_info_frame.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/auxiliary_video_information_info_frame.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -446,7 +446,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/console.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/console.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -454,7 +454,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/glyphmap.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/glyphmap.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -462,7 +462,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/hdmi.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/hdmi.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -470,7 +470,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/hdmi_top.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/hdmi_top.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -478,7 +478,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/packet_assembler.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/packet_assembler.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -486,7 +486,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/packet_picker.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/packet_picker.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -494,7 +494,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/pll.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/pll.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -502,7 +502,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/serializer.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/serializer.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -510,7 +510,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/source_product_description_info_frame.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/source_product_description_info_frame.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -518,7 +518,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Downloads/hdmi_working/tmds_channel.sv">
+      <File Path="$PPRDIR/../../../../hdmi_working/tmds_channel.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

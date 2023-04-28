@@ -8,7 +8,7 @@ logic [63:0] nextGrid;
  datapath prog(currentGrid, nextGrid);
  assign grid = 64'h4020_E000_0000_0000;
 
-
+flopr(clk, start, nextGrid, grid, outGrid);
 
    typedef enum 	logic [3:0] {S0, cal, st} statetype;
    statetype state, nextstate;
@@ -16,22 +16,18 @@ logic [63:0] nextGrid;
      if (start) state <= S0;
      else       state <= nextstate;
 
-   always_comb
-     case (state)
-//initial state
-      S0: begin
-      outGrid = grid;
-      nextstate = cal;
-      end
-//put into datapath
-      cal: begin
-        currentGrid = outGrid;
-        nextstate = st;
-      end
-      st: begin
-//set to grid
-        outGrid = nextGrid;
-        nextstate = cal;
-      end
-     endcase
+    assign currentGrid = (start) ? grid: outGrid;
+endmodule
+
+module flopr(input  logic       clk,
+             input  logic       reset, 
+             input  logic [63:0] d, 
+             input  logic [63:0] seed,
+             output logic [63:0] q);
+
+  // asynchronous reset (similar to HDL Example 4.19)
+  always_ff @(posedge clk, posedge reset)
+     if (reset) q <= seed;
+     else       q <= d;
+   
 endmodule
