@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Apr 28 15:53:38 2023
-| Host         : CEAT-ENDV350-06 running 64-bit major release  (build 9200)
+| Date         : Fri May  5 14:32:46 2023
+| Host         : CEAT-ENDV350-01 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_demo_control_sets_placed.rpt
 | Design       : top_demo
 | Device       : xc7z020
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              63 |           29 |
-| No           | No                    | Yes                    |              64 |           47 |
-| No           | Yes                   | No                     |              85 |           25 |
-| Yes          | No                    | No                     |              59 |           23 |
+| No           | No                    | No                     |              63 |           25 |
+| No           | No                    | Yes                    |              64 |           52 |
+| No           | Yes                   | No                     |              85 |           26 |
+| Yes          | No                    | No                     |              59 |           24 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              50 |           17 |
+| Yes          | Yes                   | No                     |              50 |           15 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,26 +73,26 @@ Table of Contents
 +--------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 |       Clock Signal       |                                              Enable Signal                                              |                                             Set/Reset Signal                                            | Slice Load Count | Bel Load Count | Bels / Slice |
 +--------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
-|  sysclk_125mhz_IBUF_BUFG |                                                                                                         |                                                                                                         |                1 |              2 |         2.00 |
 |  test/hdmi_pll/clk_audio |                                                                                                         |                                                                                                         |                2 |              2 |         1.00 |
-|  nolabel_line60/smol_clk |                                                                                                         |                                                                                                         |                1 |              2 |         2.00 |
-|  test/hdmi_pll/clk_out1  |                                                                                                         | test/hdmi/cx[10]_i_1_n_0                                                                                |                2 |              4 |         2.00 |
+|  sysclk_125mhz_IBUF_BUFG |                                                                                                         |                                                                                                         |                1 |              2 |         2.00 |
+|  smol_clk                |                                                                                                         |                                                                                                         |                1 |              2 |         2.00 |
+|  test/hdmi_pll/clk_out1  |                                                                                                         | test/hdmi/cx[10]_i_1_n_0                                                                                |                3 |              4 |         1.33 |
 |  test/hdmi_pll/clk_out1  |                                                                                                         | test/counter[10]_i_1_n_0                                                                                |                2 |              5 |         2.50 |
-|  test/hdmi_pll/clk_out1  | test/hdmi/true_hdmi_output.data_island_period                                                           |                                                                                                         |                2 |              5 |         2.50 |
+|  test/hdmi_pll/clk_out1  | test/hdmi/true_hdmi_output.data_island_period                                                           |                                                                                                         |                3 |              5 |         1.67 |
 |  test/hdmi_pll/clk_audio |                                                                                                         | test/hdmi/true_hdmi_output.packet_picker/audio_clock_regeneration_packet/clk_audio_counter[5]_i_1_n_0   |                2 |              6 |         3.00 |
 |  test/hdmi_pll/clk_out1  | test/hdmi/true_hdmi_output.packet_picker/frame_counter[7]_i_1_n_0                                       |                                                                                                         |                2 |              6 |         3.00 |
 |  test/hdmi_pll/clk_out1  | test/hdmi/true_hdmi_output.packet_assembler/parity                                                      | test/hdmi/true_hdmi_output.packet_assembler/parity[4][7]_i_1_n_0                                        |                2 |              8 |         4.00 |
-|  test/hdmi_pll/clk_out1  | test/hdmi/cy0                                                                                           |                                                                                                         |                3 |             10 |         3.33 |
-|  test/hdmi_pll/clk_out1  | test/hdmi/tmds_gen[0].tmds_channel/tmds[9]_i_2_n_0                                                      | test/hdmi/tmds_gen[0].tmds_channel/tmds[9]_i_1__0_n_0                                                   |                6 |             10 |         1.67 |
+|  test/hdmi_pll/clk_out1  | test/hdmi/tmds_gen[0].tmds_channel/tmds[9]_i_2_n_0                                                      | test/hdmi/tmds_gen[0].tmds_channel/tmds[9]_i_1__0_n_0                                                   |                5 |             10 |         2.00 |
+|  test/hdmi_pll/clk_out1  | test/hdmi/cy0                                                                                           |                                                                                                         |                6 |             10 |         1.67 |
 |  test/hdmi_pll/clk_out1  |                                                                                                         | test/hdmi/tmds_gen[0].tmds_channel/SR[0]                                                                |                3 |             12 |         4.00 |
-|  sysclk_125mhz_IBUF_BUFG |                                                                                                         | btn_IBUF[3]                                                                                             |                5 |             17 |         3.40 |
 |  test/hdmi_pll/clk_out1  |                                                                                                         | test/hdmi/true_hdmi_output.packet_picker/audio_clock_regeneration_packet/clk_audio_counter_wrap_i_1_n_0 |                5 |             17 |         3.40 |
-|  test/hdmi_pll/clk_out1  | test/hdmi/true_hdmi_output.packet_picker/audio_clock_regeneration_packet/clk_audio_counter_wrap_i_1_n_0 |                                                                                                         |                6 |             18 |         3.00 |
-|  test/hdmi_pll/clk_out1  | test/hdmi/tmds_gen[2].tmds_channel/E[0]                                                                 |                                                                                                         |               10 |             20 |         2.00 |
-|  nolabel_line60/smol_clk |                                                                                                         | sw_IBUF[0]                                                                                              |                6 |             24 |         4.00 |
-|  test/hdmi_pll/clk_out1  | test/hdmi/true_hdmi_output.packet_assembler/parity[0][7]_i_1_n_0                                        | test/hdmi/true_hdmi_output.packet_assembler/parity[4][7]_i_1_n_0                                        |                9 |             32 |         3.56 |
-|  test/hdmi_pll/clk_out1  |                                                                                                         |                                                                                                         |               25 |             57 |         2.28 |
-|  smolr_clk_BUFG          |                                                                                                         | sw_IBUF[0]                                                                                              |               47 |             64 |         1.36 |
+|  sysclk_125mhz_IBUF_BUFG |                                                                                                         | btn_IBUF[3]                                                                                             |                5 |             17 |         3.40 |
+|  test/hdmi_pll/clk_out1  | test/hdmi/true_hdmi_output.packet_picker/audio_clock_regeneration_packet/clk_audio_counter_wrap_i_1_n_0 |                                                                                                         |                5 |             18 |         3.60 |
+|  test/hdmi_pll/clk_out1  | test/hdmi/tmds_gen[2].tmds_channel/E[0]                                                                 |                                                                                                         |                8 |             20 |         2.50 |
+|  sysclk_125mhz_IBUF_BUFG |                                                                                                         | sw_IBUF[7]                                                                                              |                6 |             24 |         4.00 |
+|  test/hdmi_pll/clk_out1  | test/hdmi/true_hdmi_output.packet_assembler/parity[0][7]_i_1_n_0                                        | test/hdmi/true_hdmi_output.packet_assembler/parity[4][7]_i_1_n_0                                        |                8 |             32 |         4.00 |
+|  test/hdmi_pll/clk_out1  |                                                                                                         |                                                                                                         |               21 |             57 |         2.71 |
+|  smolr_clk_BUFG          |                                                                                                         | sw_IBUF[7]                                                                                              |               52 |             64 |         1.23 |
 +--------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 
 

@@ -57,8 +57,8 @@ module top_demo
   logic [63:0] outGrid;
 
   // Place Conway Game of Life instantiation here
-  clk_div(smol_clk, sw[0], smolr_clk);
-  gol(sw[0], smolr_clk, outGrid);
+  clk_div(sysclk_125mhz, sw[7], smolr_clk);
+  gol(sw[0], sw[7], smolr_clk, outGrid);
   // HDMI
   // logic hdmi_out_en;
   //assign hdmi_out_en = 1'b0;

@@ -1,12 +1,12 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri May  5 14:16:15 2023
+| Date         : Fri May  5 14:33:09 2023
 | Host         : CEAT-ENDV350-01 running 64-bit major release  (build 9200)
-| Command      : report_utilization -file top_demo_utilization_synth.rpt -pb top_demo_utilization_synth.pb
+| Command      : report_utilization -file route_report_utilization_0.rpt -pb route_report_utilization_0.pb
 | Design       : top_demo
 | Device       : 7z020clg484-1
-| Design State : Synthesized
+| Design State : Routed
 -----------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
@@ -15,14 +15,15 @@ Table of Contents
 -----------------
 1. Slice Logic
 1.1 Summary of Registers by Type
-2. Memory
-3. DSP
-4. IO and GT Specific
-5. Clocking
-6. Specific Feature
-7. Primitives
-8. Black Boxes
-9. Instantiated Netlists
+2. Slice Logic Distribution
+3. Memory
+4. DSP
+5. IO and GT Specific
+6. Clocking
+7. Specific Feature
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
 
 1. Slice Logic
 --------------
@@ -30,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  730 |     0 |     53200 |  1.37 |
-|   LUT as Logic          |  730 |     0 |     53200 |  1.37 |
+| Slice LUTs              |  729 |     0 |     53200 |  1.37 |
+|   LUT as Logic          |  729 |     0 |     53200 |  1.37 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
 | Slice Registers         |  321 |     0 |    106400 |  0.30 |
 |   Register as Flip Flop |  321 |     0 |    106400 |  0.30 |
@@ -39,7 +40,6 @@ Table of Contents
 | F7 Muxes                |    6 |     0 |     26600 |  0.02 |
 | F8 Muxes                |    1 |     0 |     13300 | <0.01 |
 +-------------------------+------+-------+-----------+-------+
-* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
 1.1 Summary of Registers by Type
@@ -61,7 +61,33 @@ Table of Contents
 +-------+--------------+-------------+--------------+
 
 
-2. Memory
+2. Slice Logic Distribution
+---------------------------
+
++--------------------------------------------+------+-------+-----------+-------+
+|                  Site Type                 | Used | Fixed | Available | Util% |
++--------------------------------------------+------+-------+-----------+-------+
+| Slice                                      |  223 |     0 |     13300 |  1.68 |
+|   SLICEL                                   |  146 |     0 |           |       |
+|   SLICEM                                   |   77 |     0 |           |       |
+| LUT as Logic                               |  729 |     0 |     53200 |  1.37 |
+|   using O5 output only                     |    0 |       |           |       |
+|   using O6 output only                     |  491 |       |           |       |
+|   using O5 and O6                          |  238 |       |           |       |
+| LUT as Memory                              |    0 |     0 |     17400 |  0.00 |
+|   LUT as Distributed RAM                   |    0 |     0 |           |       |
+|   LUT as Shift Register                    |    0 |     0 |           |       |
+| Slice Registers                            |  321 |     0 |    106400 |  0.30 |
+|   Register driven from within the Slice    |  291 |       |           |       |
+|   Register driven from outside the Slice   |   30 |       |           |       |
+|     LUT in front of the register is unused |   14 |       |           |       |
+|     LUT in front of the register is used   |   16 |       |           |       |
+| Unique Control Sets                        |   20 |       |     13300 |  0.15 |
++--------------------------------------------+------+-------+-----------+-------+
+* * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
+
+
+3. Memory
 ---------
 
 +----------------+------+-------+-----------+-------+
@@ -74,7 +100,7 @@ Table of Contents
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
-3. DSP
+4. DSP
 ------
 
 +-----------+------+-------+-----------+-------+
@@ -84,13 +110,15 @@ Table of Contents
 +-----------+------+-------+-----------+-------+
 
 
-4. IO and GT Specific
+5. IO and GT Specific
 ---------------------
 
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   41 |     0 |       200 | 20.50 |
+| Bonded IOB                  |   41 |    41 |       200 | 20.50 |
+|   IOB Master Pads           |   18 |       |           |       |
+|   IOB Slave Pads            |   20 |       |           |       |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
@@ -103,12 +131,12 @@ Table of Contents
 | PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        16 |  0.00 |
 | IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       200 |  0.00 |
 | ILOGIC                      |    0 |     0 |       200 |  0.00 |
-| OLOGIC                      |    8 |     0 |       200 |  4.00 |
-|   OSERDES                   |    8 |       |           |       |
+| OLOGIC                      |    8 |     8 |       200 |  4.00 |
+|   OSERDES                   |    8 |     8 |           |       |
 +-----------------------------+------+-------+-----------+-------+
 
 
-5. Clocking
+6. Clocking
 -----------
 
 +------------+------+-------+-----------+-------+
@@ -124,7 +152,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 
 
-6. Specific Feature
+7. Specific Feature
 -------------------
 
 +-------------+------+-------+-----------+-------+
@@ -141,7 +169,7 @@ Table of Contents
 +-------------+------+-------+-----------+-------+
 
 
-7. Primitives
+8. Primitives
 -------------
 
 +------------+------+---------------------+
@@ -157,7 +185,7 @@ Table of Contents
 | CARRY4     |   19 |          CarryLogic |
 | IBUF       |   13 |                  IO |
 | OBUF       |   12 |                  IO |
-| LUT1       |   12 |                 LUT |
+| LUT1       |   11 |                 LUT |
 | OSERDESE2  |    8 |                  IO |
 | OBUFT      |    8 |                  IO |
 | MUXF7      |    6 |               MuxFx |
@@ -170,7 +198,7 @@ Table of Contents
 +------------+------+---------------------+
 
 
-8. Black Boxes
+9. Black Boxes
 --------------
 
 +----------+------+
@@ -178,8 +206,8 @@ Table of Contents
 +----------+------+
 
 
-9. Instantiated Netlists
-------------------------
+10. Instantiated Netlists
+-------------------------
 
 +----------+------+
 | Ref Name | Used |

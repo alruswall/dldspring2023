@@ -162,5 +162,3 @@ Table of Contents
 |       true_hdmi_output.packet_picker    |     0.828 |
 |     hdmi_pll                            |     3.419 |
 +-----------------------------------------+-----------+
-
-

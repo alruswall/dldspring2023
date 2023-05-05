@@ -2,12 +2,12 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Apr 28 15:51:54 2023
-# Process ID: 37816
-# Current directory: C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.runs/synth_1
+# Start of session at: Fri May  5 14:15:05 2023
+# Process ID: 58944
+# Current directory: C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.runs/synth_1
 # Command line: vivado.exe -log top_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_demo.tcl
-# Log file: C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.runs/synth_1/top_demo.vds
-# Journal file: C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.runs/synth_1\vivado.jou
+# Log file: C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.runs/synth_1/top_demo.vds
+# Journal file: C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top_demo.tcl -notrace
 Command: synth_design -top top_demo -part xc7z020clg484-1
@@ -17,28 +17,28 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 38824
+INFO: [Synth 8-7075] Helper process launched with PID 3048
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1164.707 ; gain = 21.488
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1165.055 ; gain = 54.070
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_demo' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/new/top_demo.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/clk_div.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/clk_div.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'gol' [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/gol.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'evolve3' [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv:89]
-INFO: [Synth 8-6157] synthesizing module 'rules' [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv:148]
-INFO: [Synth 8-6155] done synthesizing module 'rules' (2#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv:148]
-INFO: [Synth 8-6155] done synthesizing module 'evolve3' (3#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv:89]
-INFO: [Synth 8-6157] synthesizing module 'evolve5' [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv:104]
-INFO: [Synth 8-6155] done synthesizing module 'evolve5' (4#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv:104]
-INFO: [Synth 8-6157] synthesizing module 'evolve8' [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv:123]
-INFO: [Synth 8-6155] done synthesizing module 'evolve8' (5#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv:123]
-INFO: [Synth 8-6155] done synthesizing module 'datapath' (6#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/datapath.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/gol.sv:22]
-INFO: [Synth 8-6155] done synthesizing module 'flopr' (7#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/gol.sv:22]
-INFO: [Synth 8-6155] done synthesizing module 'gol' (8#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/SV/gol.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_top' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi_top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'top_demo' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/new/top_demo.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/gfundis/dldspring2023/Project/SV/clk_div.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/gfundis/dldspring2023/Project/SV/clk_div.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'gol' [C:/Users/gfundis/dldspring2023/Project/SV/gol.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/gfundis/dldspring2023/Project/SV/datapath.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'evolve3' [C:/Users/gfundis/dldspring2023/Project/SV/datapath.sv:89]
+INFO: [Synth 8-6157] synthesizing module 'rules' [C:/Users/gfundis/dldspring2023/Project/SV/datapath.sv:148]
+INFO: [Synth 8-6155] done synthesizing module 'rules' (2#1) [C:/Users/gfundis/dldspring2023/Project/SV/datapath.sv:148]
+INFO: [Synth 8-6155] done synthesizing module 'evolve3' (3#1) [C:/Users/gfundis/dldspring2023/Project/SV/datapath.sv:89]
+INFO: [Synth 8-6157] synthesizing module 'evolve5' [C:/Users/gfundis/dldspring2023/Project/SV/datapath.sv:104]
+INFO: [Synth 8-6155] done synthesizing module 'evolve5' (4#1) [C:/Users/gfundis/dldspring2023/Project/SV/datapath.sv:104]
+INFO: [Synth 8-6157] synthesizing module 'evolve8' [C:/Users/gfundis/dldspring2023/Project/SV/datapath.sv:123]
+INFO: [Synth 8-6155] done synthesizing module 'evolve8' (5#1) [C:/Users/gfundis/dldspring2023/Project/SV/datapath.sv:123]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (6#1) [C:/Users/gfundis/dldspring2023/Project/SV/datapath.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [C:/Users/gfundis/dldspring2023/Project/SV/gol.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (7#1) [C:/Users/gfundis/dldspring2023/Project/SV/gol.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'gol' (8#1) [C:/Users/gfundis/dldspring2023/Project/SV/gol.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_top' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi_top.sv:1]
 	Parameter AUDIO_BIT_WIDTH bound to: 16 - type: integer 
 	Parameter AUDIO_RATE bound to: 48000 - type: integer 
 	Parameter WAVE_RATE bound to: 480 - type: integer 
@@ -50,7 +50,7 @@ INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2020.2/scrip
 	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (9#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_pll_xilinx' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/pll.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_pll_xilinx' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/pll.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 37.125000 - type: double 
@@ -103,8 +103,8 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/s
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (10#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (11#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_pll_xilinx' (12#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/pll.sv:3]
-INFO: [Synth 8-6157] synthesizing module 'hdmi' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_pll_xilinx' (12#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/pll.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'hdmi' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi.sv:4]
 	Parameter VIDEO_ID_CODE bound to: 32'sb00000000000000000000000000000100 
 	Parameter IT_CONTENT bound to: 1'b1 
 	Parameter BIT_WIDTH bound to: 32'sb00000000000000000000000000001011 
@@ -120,7 +120,7 @@ INFO: [Synth 8-6157] synthesizing module 'hdmi' [C:/Users/gfundis/Downloads/dlds
 	Parameter START_Y bound to: 32'sb00000000000000000000000000000000 
 	Parameter NUM_CHANNELS bound to: 32'sb00000000000000000000000000000011 
 	Parameter VIDEO_RATE bound to: 74250000.000000 - type: double 
-INFO: [Synth 8-6157] synthesizing module 'packet_picker' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_picker.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'packet_picker' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_picker.sv:4]
 	Parameter VIDEO_ID_CODE bound to: 32'sb00000000000000000000000000000100 
 	Parameter VIDEO_RATE bound to: 74250000.000000 - type: double 
 	Parameter IT_CONTENT bound to: 1'b1 
@@ -133,7 +133,7 @@ INFO: [Synth 8-6157] synthesizing module 'packet_picker' [C:/Users/gfundis/Downl
 	Parameter AUDIO_BIT_WIDTH_COMPARATOR bound to: 32'sb00000000000000000000000000010100 
 	Parameter WORD_LENGTH bound to: 3'b100 
 	Parameter WORD_LENGTH_LIMIT bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'audio_clock_regeneration_packet' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_clock_regeneration_packet.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'audio_clock_regeneration_packet' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_clock_regeneration_packet.sv:5]
 	Parameter VIDEO_RATE bound to: 74250000.000000 - type: double 
 	Parameter AUDIO_RATE bound to: 48000 - type: integer 
 	Parameter N bound to: 20'b00000001100000000000 
@@ -141,8 +141,8 @@ INFO: [Synth 8-6157] synthesizing module 'audio_clock_regeneration_packet' [C:/U
 	Parameter CLK_AUDIO_COUNTER_END bound to: 6'b101111 
 	Parameter CYCLE_TIME_STAMP_COUNTER_IDEAL bound to: 20'b00010010001000001010 
 	Parameter CYCLE_TIME_STAMP_COUNTER_WIDTH bound to: 32'sb00000000000000000000000000010001 
-INFO: [Synth 8-6155] done synthesizing module 'audio_clock_regeneration_packet' (13#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_clock_regeneration_packet.sv:5]
-INFO: [Synth 8-6157] synthesizing module 'audio_sample_packet' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_sample_packet.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'audio_clock_regeneration_packet' (13#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_clock_regeneration_packet.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'audio_sample_packet' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_sample_packet.sv:8]
 	Parameter GRADE bound to: 1'b0 
 	Parameter SAMPLE_WORD_TYPE bound to: 1'b0 
 	Parameter COPYRIGHT_NOT_ASSERTED bound to: 1'b1 
@@ -156,8 +156,8 @@ INFO: [Synth 8-6157] synthesizing module 'audio_sample_packet' [C:/Users/gfundis
 	Parameter ORIGINAL_SAMPLING_FREQUENCY bound to: 4'b0000 
 	Parameter LAYOUT bound to: 1'b0 
 	Parameter CHANNEL_STATUS_LENGTH bound to: 8'b11000000 
-INFO: [Synth 8-6155] done synthesizing module 'audio_sample_packet' (14#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_sample_packet.sv:8]
-INFO: [Synth 8-6157] synthesizing module 'auxiliary_video_information_info_frame' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/auxiliary_video_information_info_frame.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'audio_sample_packet' (14#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_sample_packet.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'auxiliary_video_information_info_frame' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/auxiliary_video_information_info_frame.sv:5]
 	Parameter VIDEO_FORMAT bound to: 2'b00 
 	Parameter ACTIVE_FORMAT_INFO_PRESENT bound to: 1'b0 
 	Parameter BAR_INFO bound to: 2'b00 
@@ -176,16 +176,16 @@ INFO: [Synth 8-6157] synthesizing module 'auxiliary_video_information_info_frame
 	Parameter LENGTH bound to: 5'b01101 
 	Parameter VERSION bound to: 8'b00000010 
 	Parameter TYPE bound to: 7'b0000010 
-INFO: [Synth 8-6155] done synthesizing module 'auxiliary_video_information_info_frame' (15#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/auxiliary_video_information_info_frame.sv:5]
-INFO: [Synth 8-6157] synthesizing module 'source_product_description_info_frame' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/source_product_description_info_frame.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'auxiliary_video_information_info_frame' (15#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/auxiliary_video_information_info_frame.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'source_product_description_info_frame' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/source_product_description_info_frame.sv:5]
 	Parameter VENDOR_NAME bound to: 64'b0101010101101110011010110110111001101111011101110110111000000000 
 	Parameter PRODUCT_DESCRIPTION bound to: 128'b01000110010100000100011101000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter SOURCE_DEVICE_INFORMATION bound to: 8'b00000000 
 	Parameter LENGTH bound to: 5'b11001 
 	Parameter VERSION bound to: 8'b00000001 
 	Parameter TYPE bound to: 7'b0000011 
-INFO: [Synth 8-6155] done synthesizing module 'source_product_description_info_frame' (16#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/source_product_description_info_frame.sv:5]
-INFO: [Synth 8-6157] synthesizing module 'audio_info_frame' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_info_frame.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'source_product_description_info_frame' (16#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/source_product_description_info_frame.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'audio_info_frame' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_info_frame.sv:5]
 	Parameter AUDIO_CHANNEL_COUNT bound to: 3'b001 
 	Parameter CHANNEL_ALLOCATION bound to: 8'b00000000 
 	Parameter DOWN_MIX_INHIBITED bound to: 1'b0 
@@ -197,29 +197,29 @@ INFO: [Synth 8-6157] synthesizing module 'audio_info_frame' [C:/Users/gfundis/Do
 	Parameter LENGTH bound to: 5'b01010 
 	Parameter VERSION bound to: 8'b00000001 
 	Parameter TYPE bound to: 7'b0000100 
-INFO: [Synth 8-6155] done synthesizing module 'audio_info_frame' (17#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_info_frame.sv:5]
-INFO: [Synth 8-6155] done synthesizing module 'packet_picker' (18#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_picker.sv:4]
-INFO: [Synth 8-6157] synthesizing module 'packet_assembler' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_assembler.sv:4]
-INFO: [Synth 8-6155] done synthesizing module 'packet_assembler' (19#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_assembler.sv:4]
-INFO: [Synth 8-6157] synthesizing module 'tmds_channel' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'audio_info_frame' (17#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/audio_info_frame.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'packet_picker' (18#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_picker.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'packet_assembler' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_assembler.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'packet_assembler' (19#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/packet_assembler.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'tmds_channel' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
 	Parameter CN bound to: 32'sb00000000000000000000000000000000 
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:104]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:116]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:160]
-INFO: [Synth 8-6155] done synthesizing module 'tmds_channel' (20#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
-INFO: [Synth 8-6157] synthesizing module 'tmds_channel__parameterized0' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:104]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:116]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:160]
+INFO: [Synth 8-6155] done synthesizing module 'tmds_channel' (20#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'tmds_channel__parameterized0' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
 	Parameter CN bound to: 32'sb00000000000000000000000000000001 
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:104]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:116]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:160]
-INFO: [Synth 8-6155] done synthesizing module 'tmds_channel__parameterized0' (20#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
-INFO: [Synth 8-6157] synthesizing module 'tmds_channel__parameterized1' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:104]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:116]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:160]
+INFO: [Synth 8-6155] done synthesizing module 'tmds_channel__parameterized0' (20#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'tmds_channel__parameterized1' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
 	Parameter CN bound to: 32'sb00000000000000000000000000000010 
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:104]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:116]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:160]
-INFO: [Synth 8-6155] done synthesizing module 'tmds_channel__parameterized1' (20#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
-INFO: [Synth 8-6157] synthesizing module 'serializer' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/serializer.sv:1]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:104]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:116]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:160]
+INFO: [Synth 8-6155] done synthesizing module 'tmds_channel__parameterized1' (20#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/tmds_channel.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'serializer' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/serializer.sv:1]
 	Parameter NUM_CHANNELS bound to: 32'sb00000000000000000000000000000011 
 	Parameter VIDEO_RATE bound to: 74250000.000000 - type: double 
 INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:50398]
@@ -276,69 +276,69 @@ INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/
 	Parameter TBYTE_SRC bound to: FALSE - type: string 
 	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (21#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:50398]
-INFO: [Synth 8-6155] done synthesizing module 'serializer' (22#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/serializer.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi' (23#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi.sv:4]
-WARNING: [Synth 8-689] width (10) of port connection 'cx' does not match port width (11) of module 'hdmi' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi_top.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_top' (24#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi_top.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'segment_driver' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/segment_driver.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'serializer' (22#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/serializer.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi' (23#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi.sv:4]
+WARNING: [Synth 8-689] width (10) of port connection 'cx' does not match port width (11) of module 'hdmi' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi_top.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_top' (24#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/dldfall22proj/ProjectHDMI/hdmi_working/hdmi_top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'segment_driver' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/segment_driver.sv:23]
 	Parameter DIGIT_ZERO bound to: 2'b00 
 	Parameter DIGIT_ONE bound to: 2'b01 
 	Parameter DIGIT_TWO bound to: 2'b10 
 	Parameter DIGIT_THREE bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/segment_driver.sv:63]
-INFO: [Synth 8-6157] synthesizing module 'digit2segments' [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/digit2segments.sv:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/digit2segments.sv:30]
-INFO: [Synth 8-6155] done synthesizing module 'digit2segments' (25#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/digit2segments.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'segment_driver' (26#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/segment_driver.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'top_demo' (27#1) [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/new/top_demo.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/segment_driver.sv:63]
+INFO: [Synth 8-6157] synthesizing module 'digit2segments' [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/digit2segments.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/digit2segments.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'digit2segments' (25#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/digit2segments.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'segment_driver' (26#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/imports/vivado/segment_driver.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_demo' (27#1) [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/sources_1/new/top_demo.sv:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1262.488 ; gain = 119.270
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1262.410 ; gain = 151.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1262.488 ; gain = 119.270
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1262.410 ; gain = 151.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1262.488 ; gain = 119.270
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1262.410 ; gain = 151.426
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1262.488 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1262.410 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc]
-WARNING: [Vivado 12-584] No ports matched 'hdmi_out_en'. [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc:87]
+Parsing XDC File [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_en'. [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc:87]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_demo_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_demo_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1395.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1393.414 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1395.559 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1393.414 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1395.559 ; gain = 252.340
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1393.414 ; gain = 282.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1395.559 ; gain = 252.340
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1393.414 ; gain = 282.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1395.559 ; gain = 252.340
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1393.414 ; gain = 282.430
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'CURRENT_STATE_reg' in module 'segment_driver'
 ---------------------------------------------------------------------------------------------------
@@ -351,7 +351,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'CURRENT_STATE_reg' in modul
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'CURRENT_STATE_reg' using encoding 'sequential' in module 'segment_driver'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1395.559 ; gain = 252.340
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1393.414 ; gain = 282.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -435,25 +435,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1395.559 ; gain = 252.340
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1395.621 ; gain = 284.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1395.559 ; gain = 252.340
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1395.621 ; gain = 284.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:43 . Memory (MB): peak = 1395.559 ; gain = 252.340
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1395.621 ; gain = 284.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 1440.684 ; gain = 297.465
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1441.621 ; gain = 330.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -471,37 +471,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.391 ; gain = 312.172
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1456.457 ; gain = 345.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.391 ; gain = 312.172
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1456.457 ; gain = 345.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.391 ; gain = 312.172
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1456.457 ; gain = 345.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.391 ; gain = 312.172
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1456.457 ; gain = 345.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.391 ; gain = 312.172
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1456.457 ; gain = 345.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.391 ; gain = 312.172
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1456.457 ; gain = 345.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -519,12 +519,12 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |BUFG       |     5|
 |2     |CARRY4     |    19|
-|3     |LUT1       |    11|
-|4     |LUT2       |   172|
-|5     |LUT3       |    78|
+|3     |LUT1       |    12|
+|4     |LUT2       |   157|
+|5     |LUT3       |    93|
 |6     |LUT4       |   180|
-|7     |LUT5       |   135|
-|8     |LUT6       |   396|
+|7     |LUT5       |   133|
+|8     |LUT6       |   393|
 |9     |MMCME2_ADV |     1|
 |10    |MUXF7      |     6|
 |11    |MUXF8      |     1|
@@ -539,26 +539,26 @@ Report Cell Usage:
 |21    |OBUFT      |     8|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.391 ; gain = 312.172
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1456.457 ; gain = 345.473
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 1455.391 ; gain = 179.102
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1455.391 ; gain = 312.172
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 1456.457 ; gain = 214.469
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1456.457 ; gain = 345.473
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1455.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1456.457 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1463.496 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1464.500 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 90 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 1463.496 ; gain = 320.277
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:03 . Memory (MB): peak = 1464.500 ; gain = 353.516
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'C:/Users/gfundis/Downloads/dldspring2023/Project/Vivado/Project/Project.runs/synth_1/top_demo.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/gfundis/dldspring2023/Project/Vivado/Project/Project.runs/synth_1/top_demo.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_demo_utilization_synth.rpt -pb top_demo_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 28 15:52:57 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri May  5 14:16:15 2023...
